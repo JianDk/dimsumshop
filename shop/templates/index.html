@@ -1,3 +1,33 @@
 {% include 'navbar.html' %}
 <!-- Video embed for playing intro video -->
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jvmo8--gcuc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<html>
+<iframe style = "float:left" width="560" height="315" src="https://www.youtube.com/embed/jvmo8--gcuc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+here comes some text of description of this product
+here comes some text of description of this product
+here comes some text of description of this product
+here comes some text of description of this product
+here comes some text of description of this product
+here comes some text of description of this product
+here comes some text of description of this product
+here comes some text of description of this product
+here comes some text of description of this product
+here comes some text of description of this product
+here comes some text of description of this product
+here comes some text of description of this producthere comes some text of description of this product
+here comes some text of description of this product
+here comes some text of description of this product
+here comes some text of description of this product 
+
+
+{% block content %}
+<p>
+    <form method = 'POST'> {% csrf_token %}
+    {{ form.as_p }}
+    <input type = 'submit' value = 'Check delivery' />
+    </form>
+
+    <h1>{{postcode_delivery}}</h1>
+</p>
+{% endblock %}
+
+</html>
